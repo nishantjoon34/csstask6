@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* pre-defined classes */
+        
+        [class*="col-"] {
+            float: left;
+            /* padding: 10px; */
+            /* border: 1px solid red; */
+        }
+        
+        .col-1 {
+            width: 8.33%;
+        }
+        
+        .col-2 {
+            width: 16.66%;
+        }
+        
+        .col-3 {
+            width: 25%;
+        }
+        
+        .col-4 {
+            width: 33.33%;
+        }
+        
+        .col-5 {
+            width: 41.66%;
+        }
+        
+        .col-6 {
+            width: 50%;
+        }
+        
+        .col-7 {
+            width: 58.33%;
+        }
+        
+        .col-8 {
+            width: 66.66%;
+        }
+        
+        .col-9 {
+            width: 75%;
+        }
+        
+        .col-10 {
+            width: 83.33%;
+        }
+        
+        .col-11 {
+            width: 91.66%;
+        }
+        
+        .col-12 {
+            width: 100%;
+        }
+        
+        body {
+            background-image: url('./desert.jpg');
+            background-repeat: repeat;
+            background-size: cover;
+            margin: 0%;
+            padding: 0%;
+            color: white;
+        }
+        
+        @media only screen and (max-width: 856px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+        
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            margin: 0%;
+            padding: 0px 40px 0px 40px;
+            /* background-color: rgb(159, 158, 158);
+            box-shadow: 6px 3px 5px rgb(63, 63, 63); */
+        }
+        
+        li {
+            float: right;
+            padding-left: 40px;
+            vertical-align: auto;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 17px 16px;
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 21px;
+        }
+        
+        #logo {
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+        
+        .right>div {
+            border: 2px solid black;
+        }
+        
+        .left {
+            border: 2px solid black;
+            padding: 60px;
+        }
+        
+        .right {
+            border: 2px solid black;
+        }
+        
+        #sahara {
+            text-align: center;
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+        
+        .button {
+            width: 40%;
+            padding: 20px;
+            border-radius: 30px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li style="display: flex; float: left;"> <img src="logo.jpeg" alt="logo" id="logo"> </li>
+        <li><a href="#icon">Icon</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#home">Home</a></li>
+    </ul>
+
+
+    <div class="row">
+        <div class="col-6 left">
+            <p id="sahara">SAHARA</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quidem tempore in debitis rem veniam sint, tempora totam facilis expedita! Officiis expedita eveniet veritatis ullam quasi pariatur id perferendis. Ducimus.</p>
+            <p> ipsum dolor sit amet consectetur adipisicing elit. Repellat</p>
+            <button type="button" class="button">Explore</button>
+        </div>
+        <div class="col-6 right">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Western Desert</h3>
+                    <span>It is the warmest and driest desert in the World.</span> <br>
+                    <span>It's very difficult to survive at there.</span><br>
+                </div>
+                <div class="col-6">
+                    <h3>Al Bagawat</h3>
+                    <span>It is the warmest and driest desert in the World.</span> <br>
+                    <span>It's very difficult to survive at there.</span><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h3>Pyramid of Giza</h3>
+                    <span>It is the warmest and driest desert in the World.</span> <br>
+                    <span>It's very difficult to survive at there.</span><br>
+                </div>
+                <div class="col-6">
+                    <h3>Kalashari Desert</h3>
+                    <span>It is the warmest and driest desert in the World.</span> <br>
+                    <span>It's very difficult to survive at there.</span><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
